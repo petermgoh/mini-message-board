@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Index</title>
+    </head>
+    <body>
+        <ul>
+            <% messages.forEach((message) => { %>
+                <br />
+                <li><%= message.user %></li>
+                <li><%= message.text %></li>
+                <li><%= message.date %></li>
+            <% }); %>
+        </ul>
+    </body>
+</html>

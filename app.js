@@ -1,8 +1,8 @@
 const express = require("express")
 const app = express()
 const path = require("node:path")
-const indexRouter = require("./routes/indexRouter")
-const port = 3001
+const index = require("./routes/index")
+
 
 app.set("views", path.join(__dirname, "views"))
 app.set("view engine", "ejs")
@@ -12,8 +12,9 @@ app.use(express.urlencoded({ extended: true }));
 //const assetsPath = path.join(__dirname, "public");
 //app.use(express.static(assetsPath));
 
-app.use("/", indexRouter)
+app.use("/", index)
 
+const port = 3001
 app.listen(port, () => {
     console.log(`Mini-Message-Board Listening on PORT:${port}`)
 })

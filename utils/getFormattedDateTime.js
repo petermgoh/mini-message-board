@@ -12,4 +12,4 @@ function getFormattedDateTime() {
     return dateTime.toLocaleString("en-us", options);
   }
   
-  export default getFormattedDateTime;
+ module.exports = getFormattedDateTime;

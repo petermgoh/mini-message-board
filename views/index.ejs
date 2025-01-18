@@ -3,12 +3,13 @@
         <title>Index</title>
     </head>
     <body>
+        <a href="/new">Submit New Message</a>
         <ul>
             <% messages.forEach((message) => { %>
                 <br />
                 <li><%= message.user %></li>
                 <li><%= message.text %></li>
-                <li><%= message.date %></li>
+                <li><%= message.added.toLocaleString() %></li>
             <% }); %>
         </ul>
     </body>

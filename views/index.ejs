@@ -10,6 +10,7 @@
                 <li><%= message.user %></li>
                 <li><%= message.text %></li>
                 <li><%= message.date.toLocaleString() %></li>
+                <li><a href="/message/<%= message.id %>/details">Details</a></li>
             <% }); %>
         </ul>
     </body>

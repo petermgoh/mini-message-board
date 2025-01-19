@@ -3,13 +3,13 @@ const getFormattedDateTime = require("../utils/getFormattedDateTime")
 const messages = [
     {
         id: 1,
-        userName: "Peter",
+        user: "Peter",
         date: getFormattedDateTime(),
         text: "Welcome to my Message Board!"
     },
     {
         id: 2,
-        userName: "Jiji",
+        user: "Jiji",
         date: getFormattedDateTime(),
         text: "Meow meow"
     }

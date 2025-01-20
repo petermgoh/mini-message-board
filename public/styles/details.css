@@ -2,10 +2,11 @@ main {
     display: flex;
     flex-direction: column;
     min-height: 80dvh;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .detail-card {
     border: 1px solid #6b7280
-    
+
 }

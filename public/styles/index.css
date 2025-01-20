@@ -27,10 +27,15 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     border: 1px solid #6b7280;
     margin-bottom: -1px;
     padding: 5px;
     gap: 6px
+}
+.message-header p {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .message-body {

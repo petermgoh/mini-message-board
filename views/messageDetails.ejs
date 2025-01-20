@@ -3,14 +3,17 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Message Details</title>
-        
+        <link rel="stylesheet" href="../public/styles/global.css" />
+        <link rel="stylesheet" href="../public/styles/details.css" />
     </head>
     <body>
-        <h2>Message Details</h2>
-        <ul>
-            <li>Posted by: <span><%= message.user %></span></li>
-            <li>Date: <span><%= message.date %></span></li>
-            <li>Message: <span><%= message.text %></span></li>
-        </ul>
+        <main>
+            <h2>Message Details</h2>
+            <div class="detail-card">
+                <p>Posted by: <span><%= message.user %></span></p>
+                <p>Date: <span><%= message.date %></span></p>
+                <p>Message: <span><%= message.text %></span></p>
+            </div>
+        </main>
     </body>
 </html>

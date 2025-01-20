@@ -1,17 +1,28 @@
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Index</title>
+        <link rel="stylesheet" href="../public/styles/global.css" />
+        <link rel="stylesheet" href="../public/styles/index.css" />
     </head>
     <body>
-        <a href="/new">Submit New Message</a>
-        <ul>
-            <% messages.forEach((message) => { %>
-                <br />
-                <li><%= message.user %></li>
-                <li><%= message.text %></li>
-                <li><%= message.date.toLocaleString() %></li>
-                <li><a href="/message/<%= message.id %>/details">Details</a></li>
-            <% }); %>
-        </ul>
+        <main>
+            <a href="/new">Submit New Message</a>
+            <section class="message-list">
+                    <% messages.forEach((message) => { %>
+                        <article class="message-card">
+                            <div class="message-header">
+                                <p><%= message.user %></p>
+                                <a href="/message/<%= message.id %>/details">Details</a>
+                            </div>
+                            <div class="message-body">
+                                <p><%= message.date.toLocaleString() %></p>
+                                <p><%= message.text %></p>
+                            </div>
+                        </article>
+                        <% }); %>
+            </section>
+        </main>
     </body>
 </html>

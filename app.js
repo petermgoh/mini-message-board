@@ -15,7 +15,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 
 app.use("/", index)
 
-const port = 3001
+const port = 8000
 app.listen(port, () => {
     console.log(`Mini-Message-Board Listening on PORT:${port}`)
 })
